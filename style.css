@@ -100,3 +100,105 @@ header h1 {
 header .material-icons {
   font-size: 36px;
 }
+
+main {
+  max-width: 1200px;
+  margin: 120px auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px; 
+}
+
+@media screen and (max-width: 940px) {
+  main {
+    margin: 120px 40px;
+  }
+}
+
+section {
+  position: relative;
+  width: 400px;
+
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+p.index {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-size: 24px;
+}
+
+article {
+  margin: 40px;
+  margin-bottom: 60px;
+}
+
+h2.title {
+  min-height: 90px;
+
+  font-size: 36px;
+  font-weight: 400;
+}
+
+p.sub {
+  margin-top: 10px;
+  padding-top: 10px;
+
+  border-top: 1px solid;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p.text {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+button {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  width: 200px;
+  height: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid;
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-size: 14px;
+}
+
+.button-text {
+  margin: auto;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+button .material-icons {
+  padding-right: 5px;
+  font-size: 36px;
+}
+
+button:hover {
+  border: 1px solid;
+  background-color: var(--secondary);
+  color: var(--primary);
+}

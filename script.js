@@ -1,7 +1,7 @@
 function cardForBeer(beer, index) {
   return `
     <section>
-      <p class="index">${index}</p>
+      <p class="index">${index+1}</p>
       <article>
         <h2 class="title">${beer.title}</h2>
         <p class="sub">${beer.sub}</p>
@@ -18,7 +18,7 @@ function cardForBeer(beer, index) {
 function loadEvent() {
   const mainElement = document.querySelector("main");
 
-  for (let i = 1; i <= beers.length; i++) {
+  for (let i = 0; i < beers.length; i++) {
     const beer = beers[i];
     mainElement.insertAdjacentHTML("beforeend", cardForBeer(beer, i));
   }
