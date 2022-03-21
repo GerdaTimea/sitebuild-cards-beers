@@ -70,5 +70,33 @@ textarea {
 
 body {
   font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--primary);
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--primary);
+  border-bottom: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+header .material-icons {
+  font-size: 36px;
+}
